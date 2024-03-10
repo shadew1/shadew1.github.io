@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/uikit.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.js"></script>
+
+    <title>Portfolio</title>
+</head>
+<body>
+<!-- Navigation Bar -->
+    <nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-visible@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    
+    <div class="uk-navbar-left">
+        <a href="" class="uk-navbar-item uk-logo uk-light">TweshaaDewan.</a>
+    </div>
+    <div class="uk-navbar-right">
+
+        <ul class="uk-navbar-nav uk-light">
+            <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll>About</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="#projects" uk-scroll>Projects</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="mailto:" uk-scroll>Contact</a></li>
+
+        </ul>
+
+    </div>
+</nav>
+<!-- Navigation Bar Ends  -->
+
+<!-- Navigation Bar Mobile -->
+<nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-hidden@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    
+    <div class="uk-navbar-left">
+        <a href="" class="uk-navbar-item uk-logo uk-light">TweshaaDewan.</a>
+    </div>
+    <div class="uk-navbar-right">
+
+        <ul class="uk-navbar-nav uk-light">
+            <li><button uk-toggle="target: #offcanvas-nav" type="button" uk-navbar-toggle-icon></button></li>
+
+        </ul>
+
+    </div>
+</nav>
+<!-- Change This -->
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            <li class="uk-active"><a href="#" uk-scroll>Home</a></li>
+            <li class="uk-active"><a href="#about" uk-scroll>About</a></li>
+            <li class="uk-active"><a href="#projects" uk-scroll>Projects</a></li>
+            <li class="uk-active"><a href="mailto:tweshaad@gmail.com">Contact</a></li> <!--- change to ur email-->
+
+        </ul>
+
+
+
+
+    </div>
+</div>
+
+<!-- Navigation Bar Mobile Ends -->
+<!-- Home -->
+<section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+    <h1 class="uk-margin-xlarge-left uk-light uk-text-left uk-margin-xlarge-right">I'm Tweshaa Dewan, a data scientist, <br>pursuing a master's in data science at the London School of Economics.</h1>
+    <a href="#about" class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-secondary" uk-scroll>About Me</a>
+
+
+</section>
+
+<!-- Home Ends -->
+<br>
+
+
+<hr class="uk-margin-xlarge-top uk-margin-xlarge-left uk-margin-xlarge-right">
+
+<!-- About Me -->
+<section id="about" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+<h3 class="uk-margin-xlarge-left uk-light">About Me</h3>
+<!-- Change here to ur paragraph -->
+<p class="uk-margin-xlarge-left uk-margin-xlarge-right">Hey there! I'm Tweshaa Dewan, a data enthusiast with a knack for turning numbers into meaningful insights. You'll often find me buried in datasets, unraveling trends and patterns like a detective on a mission. 
+
+    When I'm not busy wrangling data, you can catch me at dance class or on the lookout for the next great meal to indulge in. I believe in striking a balance between work and play, finding inspiration in both the complexities of data analysis and the simplicity of life's little pleasures.
+    
+    With a solid foundation in mathematics from my undergraduate studies, coupled with a year of hands-on experience as a data scientist, and currently pursuing my master's degree in data science from the LSE, I bring a blend of analytical skills and innovative problem-solving to the table.
+    
+    So, if you're ever up for a chat about all things data or just want to swap restaurant and food recommendations, feel free to reach out! Let's connect and see where our paths intersect in this vast world of data science.
+</p>
+&nbsp;<a href="https://github.com/shadew1" class="uk-button-text uk-light" uk-icon="github"></a> &nbsp;<a href="https://www.linkedin.com/in/tweshaa/" class=" uk-light uk-button-text" uk-icon="linkedin"></a>
+
+<!-- About Me Ends -->
+
+
+
+</section>
+
+<!-- Projects Section -->
+<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
+<section id="projects" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+<h3 class="uk-margin-xlarge-left uk-light">Projects</h3>
+<p class="uk-margin-xlarge-left">Projects that i've worked on</p>
+
+<div class="uk-margin-xlarge-left uk-margin-xlarge-right">
+    <!-- Change all of this to ur projects -->
+    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>Music Genre Classification using CNN</h4>
+        <p>The goal of the project is to classify different music genres based on their spectrograms using Convolutional Neural Networks.
+            The data represent the log-transformed Mel spectrograms derived from the GTZAN dataset. The original GTZAN dataset contains 30-second audio files of 1,000 songs associated with 10 different genres (100 per genre). We have reduced the original data to 4 genres (400 songs) and transformed it to obtain, for each song, 15 log-transformed Mel spectrograms. Each Mel spectrogram is an image file which describes the time, frequency and intensity of a song segment.
+            The 4 genres are classical music, disco music, metal music and rock music.
+        </p>
+        <a class="uk-button-text uk-text-decoration-none" href="https://github.com/lse-st456/st456-wt2024-assignment-1-shadew1/tree/main">
+            <span uk-icon="icon: link">
+            </span> Website Link </a>
+        </div>
+        <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+            <h4>EDA and Movie Recommender</h4>
+            <p>The aim is to analyse the MovieLens dataset and find what factors truly influence movie ratings and then create a simple movie recommender using Cosine Similarity. The project is EDA focused, with a lot of weight on analysing each variable, visualisations, trends and distributions of features. A simple recommender using cosine similarity is created at the end.</p>
+            <a class="uk-button-text uk-text-decoration-none" href="https://github.com/shadew1/Recommender_MovieLens">
+                <span uk-icon="icon: link">
+                </span> Website Link </a>
+        </div>        
+        <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+            <h4>ML: Room Occupancy Estimation</h4>
+            <p>This is a classification machine learning project to estimate the precise number of occupants in a room using multiple non-intrusive environmental sensors like temperature, light, sound, CO2 and PIR (passive infrared censor). Performed multiple classification models, such as K-NN, XGBoost, Random Forest, LDA, QDA, Decision Tree classifier, and more. Further performed model selection based on accuracy metrics.</p>
+            <a class="uk-button-text uk-text-decoration-none" href="https://github.com/shadew1/ML_Project_Room_Occupancy_Estimation/tree/main">
+                <span uk-icon="icon: link">
+                </span> Website Link </a>
+
+
+            </div></div>
+
+    <br>
+
+</section>
+<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
+</div>
+<!-- Projects Section Ends -->
+
+<!-- Technologies Section -->
+<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
+<section id="projects" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+<h3 class="uk-margin-xlarge-left uk-light">Technologies</h3>
+<p class="uk-margin-xlarge-left">Technologies that I have worked with</p>
+
+<div class="uk-margin-xlarge-left uk-margin-xlarge-right">
+    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>Languages</h4>
+        <ul>
+            <li>Python</li>
+            <li>PySpark</li>
+            <li>R</li>
+            <li>SQL</li>
+         </ul>   
+        </div>
+        <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+            <h4>Machine Learning Algorithms</h4>
+            <h5>Regression</h5>
+            <ul>
+                <li>Linear Regression</li>
+                <li>Polynomial Regression</li>
+                <li>Ridge, Lasso, & Elastic Net</li>
+             </ul>  
+             <h5>Unsupervised</h5>
+             <ul>
+                 <li>K-Means Clustering</li>
+                 <li>Hierarchial Clustering</li>
+                 <li>DBSCAN</li>
+                 <li>PCA</li>
+              </ul>  
+              <h5>Classification</h5>
+            <ul>
+                <li>Logistic Regression</li>
+                <li>K- Nearest Neighbour</li>
+                <li>Decision Trees</li>
+                <li>Naive Bayes</li>
+             </ul>  
+             <h5>Ensemble</h5>
+            <ul>
+                <li>Bagging: Random Forest</li>
+                <li>Boosting: Gradient Boost, AdaBoost, XGBoost</li>
+                <li>Stacking</li>
+             </ul>  
+    <div class="uk-margin-xlarge-left uk-margin-xlarge-right">
+    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>Databases and Cloud Platforms</h4>
+        <ul>
+            <li>Google Cloud Platform</li>
+            <li>AWS</li>
+            <li>Hadoop</li>
+            <li>Hive</li>
+            </ul>   
+        </div>
+
+    <div class="uk-margin-xlarge-left uk-margin-xlarge-right">
+        <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+            <h4>Deep Learning Algorithms</h4>
+            <ul>
+                <li>Image Classification: CNN, RNN, and LTSM</li>
+                <li>Text Analysis</li>
+                <li>NLP: Sentiment Analysis using NLTK, VADAR,</li>
+                <li>Hive</li>
+                </ul>   
+            </div>        
+            </div></div>    
+</body>
+</html>
